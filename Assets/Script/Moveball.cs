@@ -4,8 +4,13 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+
 public class Moveball : MonoBehaviour
 {
+
+Moveball controller = null;
+
+[SerializeField] bool lockCursor = true;
 
     [HideInInspector]
     public CharacterController mCharacterController;
@@ -39,6 +44,13 @@ public class Moveball : MonoBehaviour
         rb.maxAngularVelocity = 200;
         //counter = 15;
        // cointext.text = "COINS: " + counter;
+     controller = GetComponent<Moveball>();
+        if(lockCursor)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
+
     }
 
     // Update is called once per frame
