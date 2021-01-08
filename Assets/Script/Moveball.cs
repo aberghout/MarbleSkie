@@ -66,8 +66,9 @@ Moveball controller = null;
 
         Vector3 moveball = new Vector3(h, 0.0f, v);
 
-        //Quaternion dir = Quaternion.LookRotation(mainCam.transform.forward, Vector3.); // (0, 1, 0)
-        //Quaternion.Slerp(transform.rotation, dir, 5f);
+        Quaternion dir = Quaternion.LookRotation(mainCam.transform.forward, Vector3.up); // (0, 1, 0)
+       
+        moveball = dir * moveball;
 
 
 
