@@ -137,7 +137,8 @@ public class ThirdPersonCamera : MonoBehaviour
         angleX -= my * mRotationSpeed;
 
         // We clamp the angle along the X axis to be between the min and max pitch.
-        //-angleX = Mathf.Clamp(angleX, mMinPitch, mMaxPitch);
+        angleX = Mathf.Clamp(angleX, mMinPitch, mMaxPitch);
+      
 
         eu.y += mx * mRotationSpeed;
         Quaternion newRot = Quaternion.Euler(angleX, eu.y, 0.0f) * initialRotation;
