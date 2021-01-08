@@ -8,5 +8,7 @@ public class EndScene : MonoBehaviour
     void OnTriggerEnter()
     {
         SceneManager.LoadScene("EndScene");
+        Cursor.visible = true;
     }
+
 }
