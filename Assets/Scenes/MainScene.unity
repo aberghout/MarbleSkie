@@ -209,6 +209,7 @@ GameObject:
   m_Component:
   - component: {fileID: 88597938}
   - component: {fileID: 88597937}
+  - component: {fileID: 88597939}
   m_Layer: 0
   m_Name: Respawn Object (1)
   m_TagString: Untagged
@@ -224,7 +225,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 88597936}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 4.5, y: 0.1, z: 4.5}
@@ -243,6 +244,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &88597939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88597936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c24e7ee9c9da2469902a456b98c23f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &295519652 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8971573837076561716, guid: 72e714ef652e49443af75d6eb0d5adf0, type: 3}
@@ -380,6 +393,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1349652545}
   - component: {fileID: 1349652544}
+  - component: {fileID: 1349652546}
   m_Layer: 0
   m_Name: Respawn Object
   m_TagString: Untagged
@@ -395,7 +409,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1349652543}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 10, y: 0.1, z: 12}
@@ -414,6 +428,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1349652546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1349652543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c24e7ee9c9da2469902a456b98c23f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1392273335 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8971573837076561677, guid: 72e714ef652e49443af75d6eb0d5adf0, type: 3}
@@ -466,7 +492,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 71.74, y: 1, z: 97.48}
+  m_Size: {x: 5, y: 0.1, z: 7}
   m_Center: {x: 0, y: 1.68, z: 0}
 --- !u!114 &1578233553
 MonoBehaviour:
@@ -488,7 +514,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1578233551}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 37.41, y: -0.77, z: 10.48}
+  m_LocalPosition: {x: 54.3, y: -0.04, z: 10.48}
   m_LocalScale: {x: 10, y: 1, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
