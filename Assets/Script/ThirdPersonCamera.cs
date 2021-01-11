@@ -155,9 +155,13 @@ public class ThirdPersonCamera : MonoBehaviour
             + right * mPositionOffset.x
             + up * mPositionOffset.y;
 
-        Vector3 position = Vector3.Lerp(transform.position,
-            desiredPosition,
-            Time.deltaTime * mDamping);
+        //Vector3 position = Vector3.Lerp(transform.position,
+        //   desiredPosition,
+        //    Time.deltaTime * mDamping);
+
+
+        Vector3 position = desiredPosition;
+
         transform.position = position;
 
         if (Input.GetAxis("Mouse ScrollWheel") > 0)
