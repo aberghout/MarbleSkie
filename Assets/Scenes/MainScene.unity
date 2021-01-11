@@ -1075,10 +1075,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 295519652}
     - target: {fileID: 8993692210431648478, guid: 7790a404962470747b0781443e478b01, type: 3}
-      propertyPath: mDamping
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 8993692210431648478, guid: 7790a404962470747b0781443e478b01, type: 3}
       propertyPath: mMaxPitch
       value: 80
       objectReference: {fileID: 0}
@@ -1092,7 +1088,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8993692210431648478, guid: 7790a404962470747b0781443e478b01, type: 3}
       propertyPath: mPositionOffset.z
-      value: -1
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 8993692210431648479, guid: 7790a404962470747b0781443e478b01, type: 3}
       propertyPath: m_RootOrder

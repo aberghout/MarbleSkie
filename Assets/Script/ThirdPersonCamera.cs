@@ -159,18 +159,6 @@ public class ThirdPersonCamera : MonoBehaviour
             desiredPosition,
             Time.deltaTime * mDamping);
         transform.position = position;
-
-
-        if (Input.GetAxis("Mouse ScrollWheel") > 0)
-        {
-            GetComponent<Camera>().fieldOfView--;
-            
-        }
-
-        if (Input.GetAxis("Mouse ScrollWheel") < 0)
-        {
-            GetComponent<Camera>().fieldOfView++;
-        }
     }
 
     void CameraMove_TopDown()
