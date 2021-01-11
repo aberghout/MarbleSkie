@@ -163,15 +163,23 @@ public class ThirdPersonCamera : MonoBehaviour
         Vector3 position = desiredPosition;
 
         transform.position = position;
+       
+        Vector3 temp = new Vector3 (0f, 0f, 0f);
+        Vector3 temp2 = new Vector3 (0f, 0f, 0f);
+        
 
         if (Input.GetAxis("Mouse ScrollWheel") > 0)
         {
-            GetComponent<Camera>().fieldOfView--;
+            //GetComponent<Camera>().fieldOfView--;
+
+            GetComponent<Transform>().position = new Vector3(transform.position.x, transform.position.y - .3f, transform.position.z + .2f);
         }
 
         if (Input.GetAxis("Mouse ScrollWheel") < 0)
         {
-            GetComponent<Camera>().fieldOfView++;
+            //GetComponent<Camera>().fieldOfView++;
+
+            GetComponent<Transform>().position = new Vector3(transform.position.x, transform.position.y + .3f, transform.position.z - .2f);
         }
     }
 
